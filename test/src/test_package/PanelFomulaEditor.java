@@ -150,7 +150,7 @@ public class PanelFomulaEditor extends JPanel {
                     System.out.println(formulaEditorArea.getModel().getValueAt(0,0));
                     formulaEditorArea.TbMod.removeRow(0);
                 }
-                formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0".toString()});
+                formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0"});
                 formulaEditorArea.getColumnModel().getColumn(0).setPreferredWidth(60);
                 formulaEditorArea.getColumnModel().getColumn(1).setPreferredWidth(250);
                 formulaEditorArea.getColumnModel().getColumn(2).setPreferredWidth(300);
@@ -189,7 +189,7 @@ public class PanelFomulaEditor extends JPanel {
             }
 
         });
-        newRow.addActionListener(e -> formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0".toString()}));
+        newRow.addActionListener(e -> formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0"}));
         deletRow.addActionListener(e -> {
             if (formulaEditorArea.TbMod.getRowCount() == 1){
                 return;
@@ -241,7 +241,7 @@ public class PanelFomulaEditor extends JPanel {
                     System.out.println(formulaEditorArea.getModel().getValueAt(0,0));
                     formulaEditorArea.TbMod.removeRow(0);
                 }
-                formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0".toString()});
+                formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0"});
                 formulaEditorArea.getColumnModel().getColumn(0).setPreferredWidth(60);
                 formulaEditorArea.getColumnModel().getColumn(1).setPreferredWidth(250);
                 formulaEditorArea.getColumnModel().getColumn(2).setPreferredWidth(300);

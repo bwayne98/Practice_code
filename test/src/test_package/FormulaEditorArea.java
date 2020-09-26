@@ -8,7 +8,6 @@ public class FormulaEditorArea extends JTable {
     DefaultTableModel TbMod = new DefaultTableModel();
     Font font1 = new Font("微軟正黑體",Font.PLAIN,16);
     public JComboBox CB = new JComboBox();
-    public JComboBox CB2;
     int currentColumn;
     int currentRow;
     JTextField jTextField = new JTextField();
@@ -42,7 +41,7 @@ public class FormulaEditorArea extends JTable {
         setFont(font1);
 
         /* 初始表格 */
-        TbMod.addRow(new Object[]{"請選擇","","","0".toString()});
+        TbMod.addRow(new Object[]{"請選擇","","","0"});
         /* 第一列設定為選單CB */
         getColumnModel().getColumn(0).setCellEditor(new DefaultCellEditor(CB));
         getColumnModel().getColumn(3).setCellEditor(new DefaultCellEditor(jTextField));

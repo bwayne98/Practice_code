@@ -55,7 +55,7 @@ public class FileCreator {
             int count = 0;
             str = bufferedReader.readLine();
             while(str != null){
-                jPanel.formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0".toString()});
+                jPanel.formulaEditorArea.TbMod.addRow(new Object[]{"請選擇","","","0"});
                 String[] temp = str.split(",");
                 jPanel.formulaEditorArea.setValueAt(temp[0],count,0);
                 jPanel.formulaEditorArea.setValueAt(temp[1],count,1);
